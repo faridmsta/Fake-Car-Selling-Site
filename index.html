@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./reset.css">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #ffffff;
+        }
+
+        .barter {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+
+            width: 21px;
+            height: 21px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            background: #7ed321;
+            border-radius: 50%;
+            font-size: 14px !important;
+
+        }
+
+        .ads {
+            background-color: #f6f7fa;
+            & .ad_sec {
+                height: 40px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 20px;
+
+
+                & .oth_sites {
+
+                    & a {
+                        margin: 0px 25px 0px 0px;
+                        text-decoration: none;
+                        color: #8d94ad;
+                    }
+
+                }
+
+                & .more_datail {
+                    display: flex;
+                    gap: 10px;
+
+                    & a {
+                        text-decoration: none;
+                        color: #8d94ad
+                    }
+                }
+
+                ;
+            }
+        }
+
+        .red {
+            color: #ca1016 !important;
+
+        }
+
+        .container {
+            margin: auto;
+            max-width: 1010px;
+        }
+
+        .car_carts {
+            padding: 0px 20px;
+            margin: 20px 0px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .cart {
+            border-radius: 20px;
+            overflow: hidden;
+            border-radius: 7px;
+            background: white;
+            box-shadow: 5px 5px 23px #cacaca,
+                -5px -5px 23px #f6f6f6;
+
+            & .photo_sec {
+                position: relative;
+
+                & img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+
+                & i {
+                    color: white;
+                    font-size: 24px;
+                    position: absolute;
+                    top: 20px;
+                    right: 20px;
+                }
+            }
+
+            & .about_sec {
+                padding: 10px;
+                text-align: left;
+
+                & p {
+                    padding: 3px 0px;
+                }
+
+                & p:nth-child(1) {
+                    font-weight: 600;
+                    font-size: 24px;
+                }
+
+                & p:last-child {
+                    color: #ccc;
+                    font-size: 12px;
+                }
+
+            }
+        }
+
+        header {
+            background: #ca1016;
+
+            & .head {
+                padding: 0px 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                &>a {
+                    display: flex;
+                    align-items: center;
+                    text-decoration: none;
+                    background: #7ed321;
+                    color: white;
+                    padding: 0px 10px;
+                    height: 40px;
+                    border-radius: 7px;
+
+                    & i {
+
+                        margin: 0px 7px 0px 0px;
+                        rotate: 45deg;
+                    }
+
+                }
+
+                & .sec_s {
+                    display: flex;
+                    align-items: center;
+                    column-gap: 10px;
+
+                    & img {
+                        height: 14px;
+                        padding: 23px 25px 23px 0;
+                    }
+
+                    & ul {
+                        align-items: center;
+                        display: flex;
+
+                        & li a {
+                            font-size: 15px;
+                            text-decoration: none;
+                            color: white;
+                            padding: 21px 15px;
+                        }
+
+                    }
+                }
+
+            }
+        }
+
+        .all_filers {
+            margin: 10px 0px;
+            padding: 0px 20px;
+
+            & .mainFilters {
+                gap: 20px;
+
+                & select {
+                    border: 1px solid #dfe3e9;
+                    border-radius: 7px;
+                    width: 235px;
+                    padding: 10px 30px 10px 10px;
+                }
+            }
+
+            & .filter_btn {
+                margin-top: 10px;
+                border: none;
+                background: #ca1016;
+                padding: 15px 40px;
+                border-radius: 7px;
+                color: white;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ads">
+        <div class="container">
+            <div class="ad_sec">
+                <div class="oth_sites">
+                    <a href="">Tap.az</a>
+                    <a href="">Bina.az</a>
+                    <a href="">Boss.az</a>
+                </div>
+                <div class="more_datail">
+                    <p>Dəstək: (012) 505-77-55</p>
+                    <a href="">Yardım</a>
+                    <a href="">RU</a>
+                    <a href=""><i class="fa-solid fa-heart"></i> Secilmisler</a>
+                    <a href=""><i class="fa-solid fa-circle-user"></i></i> Giris</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <div class="head">
+                <div class="sec_s">
+                    <a href=""><img
+                            src="./img/logo-67bbb214ce91649f92ed6036eba7e52c29f3e56614a8d1404283b4c23c5878d6.svg"
+                            alt=""></a>
+                    <nav>
+                        <ul>
+                            <li><a href="">Bütün elanlar</a></li>
+                            <li><a href="">Salonlar</a></li>
+                            <li><a href="">Moto</a></li>
+                            <li><a href="">Ehtiyat hissələr və aksesuarlar</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <a href=""><i class="fa-regular fa-circle-xmark"></i> Yeni elan</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="filter_sec">
+        <div class="container">
+            <div class="all_filers">
+                <div class="mainFilters">
+                    <select onchange="optionSet(this)" class="marka">
+
+                    </select>
+                    <select class="model">
+                        <option>Model</option>
+                    </select>
+                </div>
+                <button onclick="filter()" class="filter_btn">Elanları göstər</button>
+
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <div class="container">
+            <div class="car_carts">
+
+            </div>
+        </div>
+        </div>
+    </main>
+    <script src="./code.js"></script>
+</body>
+
+</html>
